@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FreshMart</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <div class="logo">
+      FreshMart
+    </div>
+
+    <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#cart">Cart</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="cart">
+        🛒 Cart:
+        <span id="cart-count">0</span>
+      </div>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>Fresh Groceries Delivered To Your Door</h1>
+
+      <p>
+        Buy fresh vegetables, fruits and daily essentials online.
+      </p>
+
+      <button>
+        Shop Now
+      </button>
+
+    </div>
+
+  </section>
+  
+  <section class="product_section" id="products">
+    <input type="text" id = 'search' placeholder="Search products.....">
+    <div class="filter-buttons">
+
+      <button class="filter-btn" data-category="all">All</button>
+
+      <button class="filter-btn" data-category="fruit">Fruits</button>
+
+      <button class="filter-btn" data-category="vegetable">Vegetables</button>
+      <button class="filter-btn" data-category="dairy">Dairy</button>
+      <button class="filter-btn" data-category="bakery">Bakery</button>
+      <button class="filter-btn" data-category="drinks">Drinks</button>
+
+    </div>
+
+    <h1 class="product_heading">Popular Product</h1>
+    
+      
+       <div class="product-container" id ='product-container'>
+        
+      
+
+    </div>
+
+  </section>
+  
+  <section class="Cart-section" id="cart">
+    <h1>shopping Cart</h1>
+    <ul id ='cart-items'>
+      
+    </ul>
+    <h2>Total:  ₹<span id ='total-price'>0</span> </h2>
+
+  </section>
+  
+  <section class="checkout-section">
+    <div class="checkout-container">
+
+    <h1>Checkout</h1>
+
+    <input
+    type="text"
+    id="name"
+    placeholder="Enter Name">
+
+    <input
+    type="text"
+    id="phone"
+    placeholder="Enter Phone">
+
+    <textarea
+    id="address"
+    placeholder="Enter Address">
+    </textarea>
+
+    <button id="order-btn">
+        Place Order
+    </button>
+    <p id="success-msg"></p>
+    </div>
+
+  </section>
+  <script src="script.js"></script>
+  <footer>
+
+   <h3>FreshMart</h3>
+
+   <p>
+      Fresh Groceries Delivered To Your Door
+   </p>
+
+   <p>
+      📞 +91 9876543210
+   </p>
+
+   <p>
+      📧 freshmart@gmail.com
+   </p>
+
+</footer>
+
+</body>
+</html>
